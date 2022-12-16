@@ -1,0 +1,116 @@
+main {
+    background-image: url(https://a.travel-assets.com/findyours-php/viewfinder/images/res70/363000/363529-Musee-Dhistoire-De-Marseille.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro {
+    width: 50%;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 2%;
+}
+
+
+p {
+    text-align: center;
+}
+
+h1 {
+    color: #111;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: #111;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
+}
+
+main p {
+    color: #050503;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+img {
+    max-width: 600px;
+    height: auto;
+
+}
+
+div {
+    text-align: center;
+}
+
+section{
+    margin: 2% 6%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 10px double rgba(206, 175, 0, 0.548);
+}
+
+section img {
+    flex: 1;
+    max-width: 400px;
+}
+
+.mba {
+    flex: 1;
+    padding: 2%;
+}
+
+.mba p {
+    text-align: left;
+}
+
+
+.musées {
+    flex: 8;
+}
+
+aside {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: whitesmoke;
+    min-width: 350px;
+}
+
+aside div {
+    position: sticky;
+    top: 8%;
+}
+
+li {
+    text-align: start;
+    list-style: none;
+}
+
+@media screen and (max-width:1200px) {
+    section {
+        flex-direction: column;
+    }
+    section img {
+        width: 100% !important;
+        max-width: none;
+    }
+    .intro {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    aside {
+        display: none !important;
+    }
+}
